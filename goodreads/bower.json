@@ -1,0 +1,28 @@
+{
+  "name": "Goodreads Demo",
+  "homepage": "https://github.com/searchtap/demos",
+  "authors": [
+    "tech@searchtap.io"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "searchtap",
+    "search",
+    "as",
+    "service",
+    "goodreads"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "tether": "^1.3.3"
+  }
+}
