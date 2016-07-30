@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>demos</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+  <div class="header">
+    <ul class="nav  pull-right">
+      <li class="active"><a href="http://www.searchtap.io">Home</a></li>
+      <!--<li><a href="#">About</a></li>-->
+      <!--<li><a href="#">Contact</a></li>-->
+    </ul>
+    <h3 class="text-muted">HackerNews Search</h3>
+  </div>
+
+  <div class="row marketing">
+    <form class="form">
+      <div class="form-group form-group-lg">
+        <!--<div class="col-sm-12">-->
+        <input class="form-control col-sm-12" type="text" id="searchTerm" placeholder="Enter your search term..."
+               value="Steve Jobs">
+        <!--</div>-->
+      </div>
+    </form>
+  </div>
+
+  <div id="results-container">
+
+    <!-- All results will be shown here -->
+
+  </div>
+
+  <div class="jumbotron">
+    <h2>Like the search?</h2> <Br/>
+    <p class="lead">Sign up today for a beta launch and get the same experience on your own website.</p> <br/>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form
+        action="//twitter.us13.list-manage.com/subscribe/post?u=b8908fb9c394695447dfa4330&amp;id=7f593b4329"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+        class="validate form" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group form-group col-sm-6">
+            <label for="mce-FNAME" class="control-label pull-left">Name </label>
+            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+          </div>
+          <div class="mc-field-group form-group col-sm-6">
+            <label for="mce-EMAIL" class="control-label pull-left">Email </label>
+            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe"
+                     class="button btn btn-success btn-block">
+            </div>
+          </div>
+          <div class="clear">
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                      name="b_b8908fb9c394695447dfa4330_7f593b4329"
+                                                                                      tabindex="-1" value=""></div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+  </div>
+
+  <div class="footer">
+    <p>♥ from the <a href="http://www.searchtap.io/">www.searchtap.io</a></p>
+  </div>
+</div>
+
+
+<script id="news-template" type="text/x-handlebars-template">
+
+  {{#results}}
+
+  <div class="row">
+
+    <div class="col-sm-12">
+      <h3><a target="_blank" href="{{url}}"> {{title}}</a></h3>
+      by <a href="https://news.ycombinator.com/user?id={{by}}"> {{by}} </a>, <span class="moment">{{time}}</span>
+    </div>
+
+    <div class="col-sm-12">
+      <hr/>
+    </div>
+
+  </div>
+
+  {{/results}}
+
+</script>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-81609082-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>-->
+<!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>-->
+
+<script src="/bower_components/handlebars/handlebars.min.js"></script>
+<script src="/bower_components/moment/min/moment.min.js"></script>
+
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

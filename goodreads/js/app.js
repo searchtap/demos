@@ -3,7 +3,7 @@ $(function () {
   var source = $("#book-template").html();
   var template = Handlebars.compile(source);
 
-  $('#searchTerm').keydown(function () {
+  $('#searchTerm').keyup(function () {
     var token = '250c67b79fe336562583cd168f260d2eca67979e899695f39bf9ae881ed3ded8252be8a488f2fe17073dd760adb9dfef6b86433a5f170c58efaa2edf3c5891d9d58f96fab132eb623326192bd267c3d8ad07a6003eb80e829a2133b278b74969e599980d58f976d6ef104f267e352e243c29b86b50ce04c40c70544c91b2aa80';
 
     var data = {
@@ -33,6 +33,6 @@ $(function () {
     });
   });
 
-  $('#searchTerm').trigger('keydown');
+  $('#searchTerm').trigger('keyup');
 
 });
